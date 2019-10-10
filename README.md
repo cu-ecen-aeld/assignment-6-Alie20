@@ -1,1 +1,2 @@
-# assignment-6-Alie20
+# yocto-assignments-base
+Base repository for AESD Yocto assignments
