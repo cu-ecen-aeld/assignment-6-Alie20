@@ -15,11 +15,6 @@ jobs:
           clean: false
           submodules: 'recursive'
 
-      # 🔧 Fix file ownership to avoid KeyError: getpwuid
-      - name: Fix file ownership
-        run: |
-          sudo chown -R $(id -u):$(id -g) $GITHUB_WORKSPACE
-
       - uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
